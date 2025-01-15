@@ -1,0 +1,215 @@
+Begin Object Class=/Script/Engine.Material Name="M_GenericShapeTwosided"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDotProduct Name="MaterialExpressionDotProduct_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionIf Name="MaterialExpressionIf_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexNormalWS Name="MaterialExpressionVertexNormalWS_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionMultiply'"M_GenericShapeTwosided:MaterialExpressionMultiply_0"')
+      B=(Expression=MaterialExpressionMultiply'"M_GenericShapeTwosided:MaterialExpressionMultiply_2"')
+      ConstB=0.000000
+      MaterialExpressionEditorX=-288
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=4C55FA254A93DAE14B5ADC886617B147
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0"
+      Input=(Expression=MaterialExpressionVectorParameter'"M_GenericShapeTwosided:MaterialExpressionVectorParameter_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=-1712
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=E76ED8724B5EAB169E470B8DFC9DB568
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=0.995000
+      MaterialExpressionEditorX=-1344
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=1BFA0A74439FDA669403AB97F952C98C
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      MaterialExpressionEditorX=-1344
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=4D4671714EE0750496243EADC92159A5
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_2"
+      R=1.000000
+      MaterialExpressionEditorX=-1344
+      MaterialExpressionEditorY=368
+      MaterialExpressionGuid=DBCC695D40313CC0EF1F218F17F87F9E
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionDotProduct_0"
+      A=(Expression=MaterialExpressionComponentMask'"M_GenericShapeTwosided:MaterialExpressionComponentMask_0"')
+      B=(Expression=MaterialExpressionVertexNormalWS'"M_GenericShapeTwosided:MaterialExpressionVertexNormalWS_0"')
+      MaterialExpressionEditorX=-1536
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=9B15C37E49D8452DFBF4CB94F1524BBA
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionIf_0"
+      A=(Expression=MaterialExpressionDotProduct'"M_GenericShapeTwosided:MaterialExpressionDotProduct_0"')
+      B=(Expression=MaterialExpressionConstant'"M_GenericShapeTwosided:MaterialExpressionConstant_0"')
+      AGreaterThanB=(Expression=MaterialExpressionConstant'"M_GenericShapeTwosided:MaterialExpressionConstant_2"')
+      AEqualsB=(Expression=MaterialExpressionConstant'"M_GenericShapeTwosided:MaterialExpressionConstant_2"')
+      ALessThanB=(Expression=MaterialExpressionConstant'"M_GenericShapeTwosided:MaterialExpressionConstant_1"')
+      MaterialExpressionEditorX=-1216
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=747CE3414CE612F59E3955B0A32239EB
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionVectorParameter'"M_GenericShapeTwosided:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionScalarParameter'"M_GenericShapeTwosided:MaterialExpressionScalarParameter_1"')
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=0850665641D6E7EB0A0EBCB7F8BF64F5
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionIf'"M_GenericShapeTwosided:MaterialExpressionIf_0"')
+      B=(Expression=MaterialExpressionScalarParameter'"M_GenericShapeTwosided:MaterialExpressionScalarParameter_2"')
+      MaterialExpressionEditorX=-816
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=1A156B214854A7804F94DBBE2969B558
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2"
+      A=(Expression=MaterialExpressionVectorParameter'"M_GenericShapeTwosided:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'"M_GenericShapeTwosided:MaterialExpressionMultiply_3"')
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=47CE6A79401D36D0AD4B9C987B62B04F
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_3"
+      A=(Expression=MaterialExpressionMultiply'"M_GenericShapeTwosided:MaterialExpressionMultiply_1"')
+      ConstB=2.000000
+      MaterialExpressionEditorX=-672
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=D511FCB444572CC53988EE8A038F2058
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=1.000000
+      ParameterName="Opacity"
+      ExpressionGUID=EB8C426E4632BE9DA224D6A4B1E3ADF8
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=8DA8B3964D9F6A15143B0298C88BC5A8
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=0.500000
+      ParameterName="Emmisive"
+      ExpressionGUID=9CD8371D46B2DDDD8CF965B06997DC0B
+      MaterialExpressionEditorX=-608
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=95CCF0C042C27B3336429398F2B2D7F3
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      ParameterName="HighlightScale"
+      ExpressionGUID=638034FF4F68F01003CB60B87C6527F8
+      MaterialExpressionEditorX=-1024
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=F725FE5D498ACB769C2BDB917B5773EE
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+      ParameterName="Color"
+      ExpressionGUID=90B0B4EB488B87173F183BB7E44A5202
+      MaterialExpressionEditorX=-912
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=D6A4E3104643A6287A5B888202922D14
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_2"
+      DefaultValue=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+      ParameterName="HitNormal"
+      ExpressionGUID=E4B6935E4148F5949A13F2AE01CD6ABD
+      MaterialExpressionEditorX=-1904
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=95A586D147005E3B351CB0960B6C79C9
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="MaterialExpressionVertexNormalWS_0"
+      MaterialExpressionEditorX=-1904
+      MaterialExpressionEditorY=368
+      MaterialExpressionGuid=5153A0034982B65E94357F907068180E
+      Material=Material'"M_GenericShapeTwosided"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Expression=MaterialExpressionAdd'"MaterialExpressionAdd_0"')
+   Opacity=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"')
+   BlendMode=BLEND_Translucent
+   TranslucencyLightingMode=TLM_VolumetricDirectional
+   bUsedWithSkeletalMesh=True
+   Expressions(0)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(1)=MaterialExpressionAdd'"MaterialExpressionAdd_0"'
+   Expressions(2)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(3)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(4)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(5)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"'
+   Expressions(6)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(7)=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"'
+   Expressions(8)=MaterialExpressionMultiply'"MaterialExpressionMultiply_3"'
+   Expressions(9)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_2"'
+   Expressions(10)=MaterialExpressionVertexNormalWS'"MaterialExpressionVertexNormalWS_0"'
+   Expressions(11)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_0"'
+   Expressions(12)=MaterialExpressionDotProduct'"MaterialExpressionDotProduct_0"'
+   Expressions(13)=MaterialExpressionIf'"MaterialExpressionIf_0"'
+   Expressions(14)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(15)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(16)=MaterialExpressionConstant'"MaterialExpressionConstant_2"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   ParameterGroupData(3)=(GroupName="None")
+   ParameterGroupData(4)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   bUseTranslucencyVertexFog=False
+   StateId=9034EC9949DE8263D8CF2387868D1950
+   CachedExpressionData=(Parameters=(RuntimeEntries[0]=(NameHashes=(3384633251002001776,10958018825801488769,15684328969772911168),ParameterInfos=((Name="Emmisive"),(Name="HighlightScale"),(Name="Opacity")),ExpressionGuids=(9CD8371D46B2DDDD8CF965B06997DC0B,638034FF4F68F01003CB60B87C6527F8,EB8C426E4632BE9DA224D6A4B1E3ADF8),Overrides=(False,False,False)),RuntimeEntries[1]=(NameHashes=(12279385124011487613,17282593117922714961),ParameterInfos=((Name="Color"),(Name="HitNormal")),ExpressionGuids=(90B0B4EB488B87173F183BB7E44A5202,E4B6935E4148F5949A13F2AE01CD6ABD),Overrides=(False,False)),ScalarValues=(0.500000,0.000000,1.000000),VectorValues=((R=1.000000,G=1.000000,B=1.000000,A=1.000000),(R=0.000000,G=0.000000,B=0.000000,A=1.000000)),ScalarMinMaxValues=((X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000)),ScalarCurveValues=(None,None,None),ScalarCurveAtlasValues=(None,None,None),VectorChannelNameValues=((),()),VectorUsedAsChannelMaskValues=(False,False)),QualityLevelsUsed=(False,False,False,False))
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=620E07A046852CE2DEAC0795288AD380
+End Object
